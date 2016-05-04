@@ -17,7 +17,7 @@ class Triangle
     # Accessor methods for all three sides
     attr_accessor :sideA, :sideB, :sideC
     
-    # (1) equailateral is defined as a triangle with all three equal sides.
+    # (1) equilateral is defined as a triangle with all three equal sides.
     # (2) isoceles is defined as a triangle with at least two equal sides.
     # (3) scalene is defined as a triangle with three differing sides.
     # (4) right is defined as a triangle that satisfies the pythagorean theorem.
@@ -33,7 +33,7 @@ class Triangle
             puts ("(1) equilateral")
             @valid = true
         end
-        if (@sideA == @sideB) || (@sideB == @sideC) && @valid
+        if (@sideA == @sideB) || (@sideB == @sideC) || (@sideA == @sideC) && @valid
             puts ("(2) isosceles") 
             @valid = true
         end
